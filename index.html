@@ -1,12 +1,15 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
-<head>  
-     
- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8891055678405964"
-     crossorigin="anonymous"></script>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Advance Notepad Pro+</title>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8891055678405964"
+     crossorigin="anonymous"></script>
+    <meta name="google-adsense-account" content="ca-pub-8891055678405964">
+    
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -231,7 +234,7 @@
             document.getElementById("exportTXT").addEventListener("click", function () {
                 let text = "";
                 notes.forEach(note => {
-                    text += `${note.text} (${note.category})\n`;
+                    text += ${note.text} (${note.category})\n;
                 });
 
                 const blob = new Blob([text], { type: "text/plain" });
